@@ -10,6 +10,12 @@ Er nutzt Ubuntu was mit LUKS verschlüsselt ist, deshalb erstellen wir eine Kopi
 - Anleitung schreiben (Julius)
   - Brute force attacke erklären
 
+## Installation
+Install dependencies
+```bash
+pip3 install -r requirements.txt
+```
+
 ## Anleitung
 
 ## Charaktere

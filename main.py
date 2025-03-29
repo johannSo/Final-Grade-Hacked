@@ -1,4 +1,5 @@
 # Import's:
+from colorama import Fore, Style
 import sys
 import time
 import secrets
@@ -15,22 +16,34 @@ def slowprint(s): # Slowprint von https://gist.github.com/gnuton/3c7a46447d2be0a
     # slowprint("Hello, test?")
 
 # Funktionen
-def los():
+def anleitung():
     print("Julius, schreib hier mal die Anleitung rein!!!")
-    erstens()
+    while True:
+        start = input("Willst du starten? (j/n): ").lower()
+        if start == "j":
+            print("Lets go")
+            first()
+            break
+        elif start == "n":
+            print("Bye 👋")
+            exit()
+        else:
+            print("Bitte nur 'j' oder 'n' eingeben!")
 
-def erstens():
-    slowprint("Hallo")
+def first():
+    print("Du bist in das Zimmer des Schulleiters eingebrochen und hast den Laptop gefunden. Was willst du nun tun?")
+    print(Fore.BLUE + "Den Laptop starten?" + Style.RESET_ALL)
+    print(Fore.BLUE + "Die Festplatte kopieren?" + Style.RESET_ALL)
+    print(Fore.BLUE + "Die Festplatte stehlen?" + Style.RESET_ALL)
+    while True:
+        first = input("Willst du starten? (j/n): ").lower()
+        if first == "j":
+            print("Lets go")
+            break
+        elif first == "n":
+            print("Bye 👋")
+            exit()
+        else:
+            print("Bitte nur 'j' oder 'n' eingeben!")
 
-## Start
-while True:
-    start = input("Willst du starten? (j/n): ").lower()
-    if start == "j":
-        print("Lets go")
-        los()
-        break
-    elif start == "n":
-        print("Bye 👋")
-        exit()
-    else:
-        print("Bitte nur 'j' oder 'n' eingeben!")
+anleitung()
