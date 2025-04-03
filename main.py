@@ -4,6 +4,16 @@ from colorama import Fore, Style
 import sys
 import time
 import secrets
+import os
+
+# Clear funktion:
+def clear():
+    # for windows
+    if os.name == 'nt':
+        _ = os.system('cls')
+    # for mac and linux
+    else:
+        _ = os.system('clear')
 
 # Generate Password
 passwd = secrets.token_urlsafe(5)
@@ -32,12 +42,13 @@ def anleitung():
             print("Bitte nur 'j' oder 'n' eingeben!")
 
 def first():
-    print("Du bist in das Zimmer des Schulleiters eingebrochen und hast den Laptop gefunden. Was willst du nun tun?")
-    print(Fore.BLUE + "a) Den Laptop starten?" + Style.RESET_ALL)
-    print(Fore.BLUE + "b) Die Festplatte kopieren?" + Style.RESET_ALL)
-    print(Fore.BLUE + "c) Die Festplatte stehlen?" + Style.RESET_ALL)
     def first_abfrage():
         while True:
+            clear()
+            print("Du bist in das Zimmer des Schulleiters eingebrochen und hast den Laptop gefunden. Was willst du nun tun?")
+            print(Fore.BLUE + "a) Den Laptop starten?" + Style.RESET_ALL)
+            print(Fore.BLUE + "b) Die Festplatte kopieren?" + Style.RESET_ALL)
+            print(Fore.BLUE + "c) Die Festplatte stehlen?" + Style.RESET_ALL)
             first = input("Was wählst du?: ").lower()
             if first == "a":
                 print("Debug: Input: a")

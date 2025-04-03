@@ -15,6 +15,10 @@ Install dependencies
 ```bash
 pip3 install -r requirements.txt
 ```
+And run the Code
+```bash
+python3 main.py
+```
 
 ## Anleitung
 
