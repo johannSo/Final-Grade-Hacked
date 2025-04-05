@@ -96,7 +96,7 @@ def b():
         slp(3)
         final()
     elif b == "n":
-        exit()
+        print("Debug: n")
     else:
         print("Bitte nur 'y' oder 'n' eingeben!")
 
@@ -112,7 +112,7 @@ def help():
     help = input("Was willst du?")
     if help == "a":
         print("Definition Bruteforce")
-    elif help == "b":
+    elif help == "b"
         credits()
     else:
         print("Bitte nur 'a' oder 'b' eingeben!")
