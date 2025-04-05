@@ -45,7 +45,7 @@ def a():
     def first_abfrage():
         while True:
             print("\n")
-            print("DU musst es schaffen zu bestehen was machst du?")
+            print("Du musst es schaffen zu bestehen was machst du?")
             print(Fore.BLUE + "a) Lernen für die nächsten Tests 📚" + Style.RESET_ALL)
             print(Fore.BLUE + "b) In das Büro des Schulleiters einbrechen 🔑" + Style.RESET_ALL)
             print(Fore.BLUE + "c) Einen Hack auf die Schulserver starten 🖥️" + Style.RESET_ALL)
