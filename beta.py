@@ -6,6 +6,9 @@ import time
 import secrets
 import os
 
+# Variables:
+slp = time.sleep
+
 # Clear funktion:
 def clear():
     if os.name == 'nt':
@@ -30,13 +33,50 @@ def anleitung():
     while True:
         start = input("Willst du starten? (j/n): ").lower()
         if start == "j":
-            first()
+            a()
             break
         elif start == "n":
             print("Bye 👋")
             exit()
         else:
             print("Bitte nur 'j' oder 'n' eingeben!")
+
+def a():
+    def first_abfrage():
+        while True:
+            print("\n")
+            print("Debug: Ich hab keine ahnung was hier rein soll, JULIUS mach was! (;")
+            print(Fore.BLUE + "a) Lernen für die nächsten Tests 📚" + Style.RESET_ALL)
+            print(Fore.BLUE + "b) In das Büro des Schulleiters einbrechen 🔑" + Style.RESET_ALL)
+            print(Fore.BLUE + "c) Einen Hack auf die beste.schule server starten 🖥️" + Style.RESET_ALL)
+            first = input("Was wählst du?: ").lower()
+            if first == "a":
+                print(Fore.MAGENTA + "Du hast kein Bock zu lernen und giebst nach 30min auf." + Style.RESET_ALL)
+                continue
+            elif first == "b":
+                b()
+                break
+            elif first == "c":
+                c = input("Bist du dir sicher das du Starten willst")
+                if c == "j":
+                    print("Du bereitest alles vor und startest dein Hacking program 💻")
+                    slp(1)
+                    print("Output:")
+                    slowprint(Fore.GREEN + "Hack failed, security to high" + Style.RESET_ALL)
+                    slp(2)
+                    print(Fore.RED + "Am abend bekommst du eine E-Mail in der steht das man den Hack auf dich zurrück verfolgen konnte und du einen Schulverweß bekommst 😭")
+                    slp(10)
+                    clear()
+                    print("Deine eltern regen sich auf warum du sowas machst und sie nehmen dir deinen PC weg und zwingen dich zum Lernen")
+                    print("Du bleibts trozdem sitzen!\nGame Over 😭")
+                    exit()
+                elif c == "n":
+                    continue
+                else:
+                    print(Fore.LIGHTRED_EX + "Bitte nur 'a', 'b' oder 'c' eingeben!" + Style.RESET_ALL)
+            else:
+                print("Bitte nur 'a', 'b' oder 'c' eingeben!")
+    first_abfrage()
 
 def b():
     print(Fore.RED + "Du steckst dein USB stick ein und erstellst ein eins zu ein kopie der Festplatte." + Style.RESET_ALL)
@@ -47,36 +87,16 @@ def b():
     b = input("").lower()
     if b == "y":
         slowprint("Retrying with 40GB database!")
-        time.sleep(2)
-        slowprint("Success: password is " + passwd)
-        time.sleep(2)
-        c()
+        slp(2)
+        slowprint("Success: password is: " + "'" + passwd + "'")
+        slp(3)
+        final()
     elif b == "n":
         print("Debug: n")
+    else:
+        print("Bitte nur 'a', 'b' oder 'c' eingeben!")
 
-def c():
-    clear()
+def final():
+    print("Du hast das Passwort heraus gefunden ")
 
-
-def first():
-    def first_abfrage():
-        while True:
-            print("\n")
-            print("Du bist in das Zimmer des Schulleiters eingebrochen und hast den Laptop gefunden. Was willst du nun tun?")
-            print(Fore.BLUE + "a) Den Laptop starten?" + Style.RESET_ALL)
-            print(Fore.BLUE + "b) Die Festplatte kopieren?" + Style.RESET_ALL)
-            print(Fore.BLUE + "c) Die Festplatte stehlen?" + Style.RESET_ALL)
-            first = input("Was wählst du?: ").lower()
-            if first == "a":
-                print(Fore.RED + "Der Laptop startet und du siehst ein Passwortfeld. Das Passwort weißt du nicht." + Style.RESET_ALL)
-                continue
-            elif first == "b":
-                b()
-                break
-            elif first == "c":
-                print("Debug: Input: c")
-                exit()
-            else:
-                print("Bitte nur 'a', 'b' oder 'c' eingeben!")
-    first_abfrage()
 anleitung()
