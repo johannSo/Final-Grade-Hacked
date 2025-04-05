@@ -39,3 +39,9 @@ python3 main.py
 - Gaming PC (vom Hackerman)
 - USB Stick
 - Disk Kopie
+
+# Credits
+Game: Final Grade Hacked
+Git: https://github.com/johannSo/Final-Grade-Hacked
+Authors: Jonathan Soppa, Julius Brückner
+Tools: Zed, GitHub
