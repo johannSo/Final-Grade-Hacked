@@ -29,7 +29,7 @@ def slowprint(s): # Slowprint by https://gist.github.com/gnuton/3c7a46447d2be0ae
 
 # Funktionen
 def anleitung():
-    print("Debug: Julius, schreib hier mal die Anleitung rein!!!")
+    print("Willkomen. Um Optionen auszuwählen gieb den buchstaben davor ein und drücke enter. Du hast das Game geschaft wenn du deine Endjahresnote durch hacken verbessert hast und das Jahr bestehst")
     while True:
         start = input("Willst du starten? (j/n): ").lower()
         if start == "j":
@@ -45,7 +45,7 @@ def a():
     def first_abfrage():
         while True:
             print("\n")
-            print("Debug: Ich hab keine ahnung was hier rein soll, JULIUS mach was! (;")
+            print("DU musst es schaffen zu bestehen was machst du?")
             print(Fore.BLUE + "a) Lernen für die nächsten Tests 📚" + Style.RESET_ALL)
             print(Fore.BLUE + "b) In das Büro des Schulleiters einbrechen 🔑" + Style.RESET_ALL)
             print(Fore.BLUE + "c) Einen Hack auf die Schulserver starten 🖥️" + Style.RESET_ALL)
@@ -60,7 +60,7 @@ def a():
                 print("Du bereitest alles vor und startest dein Hacking program 💻")
                 slp(1)
                 print("Output:")
-                slowprint(Fore.GREEN + "Hack failed, securety to high" + Style.RESET_ALL)
+                slowprint(Fore.GREEN + "Hack failed, security to high" + Style.RESET_ALL)
                 slp(2)
                 print(Fore.RED + "Am abend bekommst du eine E-Mail in der steht das man den Hack auf dich zurrück verfolgen konnte und du einen Schulverweß bekommst 😭")
                 slp(10)
@@ -89,6 +89,7 @@ def b():
         print("Debug: n")
 
 def final():
-    print("Du hast das Passwort heraus gefunden ")
+    print("Du hast das Passwort heraus gefunden!")
+    print("")
 
 anleitung()
