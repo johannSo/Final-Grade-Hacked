@@ -111,7 +111,7 @@ def help():
     print("a) Was ist bruteforce\nb) Creditst")
     help = input("Was willst du?")
     if help == "a":
-        print("Definition Bruteforce")
+        print("Brute-Force bezeichnet eine Angriffsmethode in der IT-Sicherheit, bei der alle möglichen Kombinationen von Passwörtern oder Schlüsseln systematisch ausprobiert werden, um Zugang zu einem geschützten System zu erhalten. Diese Methode ist sehr rechenintensiv und zeitaufwendig, wird jedoch häufig dann eingesetzt, wenn keine Schwachstellen im System vorliegen.")
     elif help == "b"
         credits()
     else:
