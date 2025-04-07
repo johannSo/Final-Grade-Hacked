@@ -1,5 +1,3 @@
-# Vor dem abgeben die "Debug:" sachen entfernen
-# Nach jedem input immer clearen
 # Import's:
 from colorama import Fore, Style
 import sys
@@ -136,7 +134,6 @@ def b():
             slp(2)
             print("Game Over 😭")
             exit()
-
 
 def final():
     final = input("beste.schule: Gieb das Passwort ein: ")
