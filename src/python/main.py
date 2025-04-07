@@ -28,7 +28,7 @@ def slowprint(s): # Slowprint by https://gist.github.com/gnuton/3c7a46447d2be0ae
 
 # Funktionen
 def anleitung():
-    print("Willkomen. Um Optionen auszuwählen gieb den buchstaben davor ein und drücke enter. Du hast das Game geschaft wenn du deine Endjahresnote durch hacken verbessert hast und das Jahr bestehst")
+    print("Willkomen. Um Optionen auszuwählen gieb den buchstaben davor ein und drücke enter. Du hast das Game geschaft wenn du deine Endjahresnotel verbessert hast und das Jahr bestehst")
     while True:
         start = input("Willst du starten? (j/n): ").lower()
         if start == "j":
