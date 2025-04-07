@@ -5,12 +5,6 @@ Der Spieler ist ein Hacker und soll sich in den Laptop seines Schulleiters rein 
 ### Technische details
 Er nutzt Ubuntu was mit LUKS verschlüsselt ist, deshalb erstellen wir eine Kopie der disk um dann eine Offline 'Brute force' Attacke zu starten, und die Datei `passwd.txt` zu klauen und dann unsere noten zu ändern.
 
-## ToDo
-- Unit Tests schreiben (erst lernen🤦🏻)
-- Code Schreiben
-- Anleitung schreiben (Julius)
-  - Brute force attacke erklären
-
 ## Installation
 Install dependencies
 ```bash
@@ -20,8 +14,6 @@ And run the Code
 ```bash
 python3 src/main.py
 ```
-
-## Anleitung
 
 ## Charaktere
 - Hackerman
@@ -36,6 +28,6 @@ python3 src/main.py
 
 ## Gegenstände
 - Laptop (vom Schulleiter)
-- Gaming PC (vom Hackerman)
-- USB Stick
+- PC (vom Hackerman)
+- SSD
 - Disk Kopie
