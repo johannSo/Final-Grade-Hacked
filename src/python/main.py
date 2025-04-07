@@ -28,7 +28,7 @@ def slowprint(s): # Slowprint by https://gist.github.com/gnuton/3c7a46447d2be0ae
 
 # Funktionen
 def anleitung():
-    print("Willkomen. Um Optionen auszuwählen gieb den buchstaben davor ein und drücke enter. Du hast das Game geschaft wenn du deine Endjahresnotel verbessert hast und das Jahr bestehst")
+    print("Willkomen. Um Optionen auszuwählen gib den buchstaben davor ein und drücke enter. Du hast das Game geschaft wenn du deine Endjahresnote verbessert hast und das Jahr bestehst")
     while True:
         start = input("Willst du starten? (j/n): ").lower()
         if start == "j":
@@ -52,7 +52,7 @@ def a():
             first = input("Was wählst du?: ").lower()
             if first == "a":
                 clear()
-                print(Fore.RED + "Du hast kein Bock zu lernen und giebst nach 30 minuten auf." + Style.RESET_ALL)
+                print(Fore.RED + "Du hast kein Bock zu lernen und gibst nach 30 minuten auf." + Style.RESET_ALL)
                 continue
             elif first == "b":
                 b()
@@ -136,21 +136,20 @@ def b():
             exit()
 
 def final():
-    final = input("beste.schule: Gieb das Passwort ein: ")
+    final = input("beste.schule: Gib das Passwort ein: ")
     if final == passwd:
         print("Du hast das Passwort heraus gefunden!")
         slp(2)
-        print("Du logs dich ein und änderst deine Noten so das du bestehst aber es nicht auffällt.")
+        print("Du logst dich ein und änderst deine Noten so das du bestehst aber es nicht auffällt.")
         slp(2)
-        print("Du bestehst das Schuljahr und dein Eltern freuen sich.")
+        print("Du bestehst das Schuljahr und deine Eltern freuen sich.")
         slp(2)
-        print("Sie fragen sich aber auch wie du das geschaft hast. Du erzälst eine Lüge und sie glauben dir.")
+        print("Sie fragen sich aber auch wie du das geschaft hast. Du erzählst eine Lüge und sie glauben dir.")
         slp(2)
         print("Du bekommst einen neuen Laptop und gehst zufrieden in die Sommerferien.")
     else:
         print(Fore.RED + "Das Passwort ist falsch! 😭" + Style.RESET_ALL)
         slp(1)
-        final()
     exit()
 
 def help():
